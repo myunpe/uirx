@@ -19,6 +19,7 @@ public class CharacterDetailPresenter : MonoBehaviour {
     {
         characterModel = character;
         characterModel.NameRp.SubscribeToText(nameText).AddTo(this);
+        characterModel.HpRp.SubscribeToText(hpText).AddTo(this);
         characterModel.AtkRp.SubscribeToText(atkText).AddTo(this);
         characterModel.DefRp.SubscribeToText(defText).AddTo(this);
         characterModel.SpdRp.SubscribeToText(spdText).AddTo(this);
